@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+<<<<<<< HEAD
+=======
+import 'package:sih_women_safety/drawer.dart';
+>>>>>>> 0afcb8117f1efd294ffe8848fe9e6e3c1a712b06
 // import 'src/app.dart';
 // import 'src/settings/settings_controller.dart';
 // import 'src/settings/settings_service.dart';
@@ -26,7 +30,8 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
         home: Scaffold(
           appBar: AppBar(
-            backgroundColor: Colors.red,
+            iconTheme: const IconThemeData(color: Colors.white),
+            backgroundColor: const Color.fromARGB(255, 252, 2, 2),
             title: const Text("Women Safety",style: TextStyle(color: Colors.white,fontSize: 30),),
             actions: [
               //const Icon(Icons.search,size: 30,color: Colors.white,),
@@ -34,7 +39,7 @@ class MyApp extends StatelessWidget {
             ],
             
           ),
-          drawer: const Drawer(),
+          drawer:  main_drawer(),
         ),
     );
   }
